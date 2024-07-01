@@ -1,10 +1,10 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
 
-function MainContainer() {
+function MainContainer({children}) {
   return (
-    <Container className='main-container'>
-      
+    <Container fluid className='main-container'>
+      {children}
     </Container>
   )
 }

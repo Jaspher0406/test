@@ -1,11 +1,10 @@
-
-import './assets/index.css';
+import React from 'react';
+import './assets/index.scss';
+import RoutesComponent from './routes/RoutesComponent';
 
 function App() {
   return (
-    <div>
-      Hi
-    </div>
+   <RoutesComponent />
   );
 }
 
