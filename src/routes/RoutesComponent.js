@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import LoginScreen from '../views/LoginScreen/LoginScreen';
-import Dashboard from '../views/Dashboard';
+import Dashboard from '../views/Dashboard/Dashboard';
 
 export default function RoutesComponent() {
 	return (

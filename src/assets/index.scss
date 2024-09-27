@@ -13,9 +13,10 @@ code {
 }
 
 .main-container {
-  background: rgb(142,150,190) !important;
-  background: radial-gradient(circle, rgba(142,150,190,1) 0%, rgba(85,59,59,1) 100%) !important;
+  // background: rgb(142,150,190) !important;
+  // background: radial-gradient(circle, rgba(142,150,190,1) 0%, rgba(85,59,59,1) 100%) !important;
   height: 100vh;
+  padding: 0px 0px;
 }
 
 :root {
@@ -83,5 +84,29 @@ code {
       display: flex;
       flex-direction: column;
     }
+  }
+}
+
+.header {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #f6f6f6;
+  border-width: 0px 0px 1px 0px !important;
+  justify-content: space-between;
+  .menu-icon {
+    padding: 10px 20px;
+    font-size: 30px;
+  }
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  .footer-icon {
+    padding: 10px 20px;
+    font-size: 20px;
   }
 }
