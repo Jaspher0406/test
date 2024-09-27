@@ -111,6 +111,7 @@ code {
     justify-content: center;
     align-items: center;
     margin-left: 10px;
+    cursor: pointer;
   }
   .app-icon {
     height: 200px;
@@ -127,8 +128,10 @@ code {
     border-radius: 5px;
     padding: 10px 5px;
     .dropdown-settings {
-      font-weight: 200;
-      padding: 5px 10px;
+      font-weight: 300;
+      padding: 10px 10px;
+      display: flex;
+      justify-content: space-between;
       cursor: pointer;
       &:hover {
         background-color: #2a8affb7 !important;
