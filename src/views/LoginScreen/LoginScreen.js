@@ -9,7 +9,7 @@ import TextForm from "../../components/Text/TextForm";
 
 export default function LoginScreen() {
   let navigate = useNavigate();
-  
+
   const {
     register,
     handleSubmit,
@@ -17,14 +17,13 @@ export default function LoginScreen() {
     formState: { errors },
   } = useForm();
   const onSubmit = (data) => {
-    console.log('123123', data);
     navigate("/dashboard", { replace: true });
   };
 
-  console.log(watch("password"));
+  console.log(watch("username"));
 
   return (
-    <MainContainer>
+    <div className="login">
       <div className="login-table">
         <h2 className="mb-4">Log In</h2>
         <Form onSubmit={handleSubmit(onSubmit)}>
@@ -47,10 +46,10 @@ export default function LoginScreen() {
             />
           </Form.Group>
           <div className="center mt-4">
-          <PrimaryButton label="Submit" type="submit" />
+            <PrimaryButton label="Submit" type="submit" />
           </div>
         </Form>
       </div>
-    </MainContainer>
+    </div>
   );
 }

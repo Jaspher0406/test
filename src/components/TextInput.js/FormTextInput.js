@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function FormTextInput({ type, placeholder, register }) {
+export default function FormTextInput({ type, placeholder, ...register }) {
   return (
     <div>
       <input
