@@ -3,6 +3,7 @@ import MainContainer from '../../layouts/MainContainer';
 import { Image, Card, Flex } from 'antd';
 import { Spin } from "antd";
 import { LoadingOutlined } from '@ant-design/icons';
+import Header from '../Header';
 const { Meta } = Card;
 
 
@@ -35,6 +36,7 @@ export default function Dashboard() {
 
   return (
     <MainContainer>
+      <Header />
       {!loading ?
         <div className='dashboard-cards'>
           {latestNews.map(item => {

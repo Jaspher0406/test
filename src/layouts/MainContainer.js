@@ -6,9 +6,9 @@ import Footer from '../views/Footer'
 function MainContainer({children}) {
   return (
     <Container fluid className='main-container'>
-      <Header />
+      {/* <Header /> */}
       {children}
-      <Footer />
+      {/* <Footer /> */}
     </Container>
   )
 }
